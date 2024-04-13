@@ -2,7 +2,7 @@
 // Created: 24-04-12
 
 #include "console_utils.agc"
-#include "ui_utils.agc"
+#include "menu_main.agc"
 
 #CONSTANT state_MainMenu 0
 #CONSTANT state_GameMenu 1
@@ -27,6 +27,7 @@ function UpdateGameState()
 		select gState:
 			case state_MainMenu:
 				UpdateGameTitle("On Main Menu")
+				UpdateMainMenu()
 				
 			endcase
 			case state_GameMenu:
@@ -45,7 +46,21 @@ endfunction
 function InitGameState(state as integer)
 	select state:
 		case state_MainMenu:
+			InitMainMenu()
 			
+		endcase
+		case state_GameMenu:
+			
+		endcase
+		case default:
+		endcase
+	endselect
+endfunction
+
+function UninitGameState(state as integer)
+		select state:
+		case state_MainMenu:
+			UninitMainMenu()
 			
 		endcase
 		case state_GameMenu:
@@ -58,6 +73,7 @@ endfunction
 
 function SetGameState(state as integer)
 	if(GetIsStateValid(state))
+		UninitGameState(gState)
 		InitGameState(state)
 		gState = state
 		

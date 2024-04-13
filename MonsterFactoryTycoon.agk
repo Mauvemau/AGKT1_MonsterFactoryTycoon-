@@ -49,20 +49,24 @@ dynamic_memory=0
 output_path=
 
 [projectfiles]
-FILE_0=main.agc;-1
-FILE_1=game_state_manager.agc;-1
-FILE_2=ui_utils.agc;-1
-FILE_3=collision_utils.agc;-1
-FILE_4=general_utils.agc;-1
-FILE_5=console_utils.agc;-1
+FILE_0=collision_utils.agc;-1
+FILE_1=console_utils.agc;-1
+FILE_2=game_state_manager.agc;-1
+FILE_3=general_utils.agc;-1
+FILE_4=main.agc;-1
+FILE_5=ui_utils.agc;-1
+FILE_6=menu_main.agc;-1
+FILE_7=game.agc;-1
+FILE_8=object_entity.agc;-1
 
 [files]
-FILE_NAME_0=0;main.agc;22;0
-FILE_NAME_1=0;game_state_manager.agc;64;1
-FILE_NAME_2=0;ui_utils.agc;33;2
-FILE_NAME_3=0;collision_utils.agc;9;3
-FILE_NAME_4=0;general_utils.agc;15;4
-FILE_NAME_5=1;console_utils.agc;16;5
+FILE_NAME_0=0;console_utils.agc;26;0
+FILE_NAME_1=0;game_state_manager.agc;40;1
+FILE_NAME_2=0;main.agc;11;2
+FILE_NAME_3=0;ui_utils.agc;54;3
+FILE_NAME_4=0;menu_main.agc;9;4
+FILE_NAME_5=0;game.agc;3;5
+FILE_NAME_6=1;object_entity.agc;0;6
 
 [watchvariables]
 

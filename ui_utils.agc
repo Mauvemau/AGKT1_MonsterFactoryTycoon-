@@ -50,6 +50,11 @@ function UpdateButton(button ref as Button)
 	
 endfunction pressed
 
+// Just destoys the text (idk text in this framework works in a strange way)
+function DestroyButton(button as Button)
+	DeleteText(button.textID)
+endfunction
+
 function CreateButton(posX as float, posY as float, width as float, height as float, color as integer, text as string)
 	button as Button
 	button.position.x = posX

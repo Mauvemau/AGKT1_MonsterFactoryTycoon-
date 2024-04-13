@@ -1,6 +1,8 @@
 // File: console_utils.agc
 // Created: 24-04-13
 
+#include "general_utils.agc"
+
 type MyLog
 	logMessage as string
 	colorR as integer
@@ -8,20 +10,23 @@ type MyLog
 	colorB as integer
 endtype
 
+global consoleVisible = false
 global consoleIndex = 0
 global console as MyLog[5]
 
 function DrawConsole()
-	consoleLength = console.length
-	print("Console (" + str(consoleIndex) + ")")
-	if(consoleIndex > 4)
-		for i = 0 to 4
-			print(console[i].logMessage)
-		next i
-	else
-		for i = 0 to consoleIndex
-			print(console[i].logMessage)
-		next i
+	if(consoleVisible)
+		consoleLength = console.length
+		print("Console (" + str(consoleIndex) + ")")
+		if(consoleIndex > 4)
+			for i = 0 to 4
+				print(console[i].logMessage)
+			next i
+		else
+			for i = 0 to consoleIndex
+				print(console[i].logMessage)
+			next i
+		endif
 	endif
 endfunction
 
@@ -60,4 +65,8 @@ endfunction
 
 function LogMessage(msg as string)
 	AddConsoleLog(msg, 225, 225, 255)
+endfunction
+
+function SetConsoleVisible(value as integer)
+	consoleVisible = value
 endfunction
