@@ -3,6 +3,16 @@
 
 #include "general_utils.agc"
 
+type CircleCollider
+	offset as Vector2
+	radius as float
+endtype
+
+type RectangleCollider
+	offset as Vector2
+	size as Vector2
+endtype
+
 function CheckVector2RectCollision(v as Vector2, rectPos as Vector2, rectSize as Vector2)
 	if v.x > rectPos.x and v.x < (rectPos.x + rectSize.x) and v.y > rectPos.y and v.y < (rectPos.y + rectSize.y)
 		coll = true

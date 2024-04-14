@@ -3,6 +3,7 @@
 
 #include "console_utils.agc"
 #include "menu_main.agc"
+#include "game.agc"
 
 #CONSTANT state_MainMenu 0
 #CONSTANT state_GameMenu 1
@@ -32,10 +33,10 @@ function UpdateGameState()
 			endcase
 			case state_GameMenu:
 				UpdateGameTitle("Playing!")
+				UpdateGame()
 				
 			endcase
 			case default:
-				
 			endcase
 		endselect
 		DrawConsole()
@@ -50,6 +51,7 @@ function InitGameState(state as integer)
 			
 		endcase
 		case state_GameMenu:
+			InitGame()
 			
 		endcase
 		case default:
@@ -64,6 +66,7 @@ function UninitGameState(state as integer)
 			
 		endcase
 		case state_GameMenu:
+			UninitGame()
 			
 		endcase
 		case default:

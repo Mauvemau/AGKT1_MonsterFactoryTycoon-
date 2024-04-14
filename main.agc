@@ -21,6 +21,9 @@ SetSyncRate(60, 0) // Max FPS 60
 SetScissor(0,0,0,0) // use the maximum available screen space, no black borders
 UseNewDefaultFonts(true)
 
+SetDefaultMinFilter(0) 
+SetDefaultMagFilter(0) 
+
 SetConsoleVisible(true) // Draw custom console logs
 
 StartGame() // Start the game

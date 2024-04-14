@@ -46,27 +46,26 @@ prov_profile_path=
 [html5_settings]
 commands_used=0
 dynamic_memory=0
-output_path=
+output_path=C:/Users/mdami/OneDrive/Documents/AppGameKit/MonsterFactoryTycoon/HTML5
 
 [projectfiles]
 FILE_0=collision_utils.agc;-1
 FILE_1=console_utils.agc;-1
-FILE_2=game_state_manager.agc;-1
-FILE_3=general_utils.agc;-1
-FILE_4=main.agc;-1
-FILE_5=ui_utils.agc;-1
+FILE_2=game.agc;-1
+FILE_3=game_state_manager.agc;-1
+FILE_4=general_utils.agc;-1
+FILE_5=main.agc;-1
 FILE_6=menu_main.agc;-1
-FILE_7=game.agc;-1
-FILE_8=object_entity.agc;-1
+FILE_7=object_entity.agc;-1
+FILE_8=ui_utils.agc;-1
 
 [files]
-FILE_NAME_0=0;console_utils.agc;26;0
-FILE_NAME_1=0;game_state_manager.agc;40;1
-FILE_NAME_2=0;main.agc;11;2
-FILE_NAME_3=0;ui_utils.agc;54;3
-FILE_NAME_4=0;menu_main.agc;9;4
-FILE_NAME_5=0;game.agc;3;5
-FILE_NAME_6=1;object_entity.agc;0;6
+FILE_NAME_0=0;collision_utils.agc;10;0
+FILE_NAME_1=0;game.agc;3;1
+FILE_NAME_2=0;game_state_manager.agc;40;2
+FILE_NAME_3=0;main.agc;20;3
+FILE_NAME_4=0;menu_main.agc;13;4
+FILE_NAME_5=0;object_entity.agc;19;5
 
 [watchvariables]
 
